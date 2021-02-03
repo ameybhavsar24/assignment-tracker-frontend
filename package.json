@@ -1,0 +1,27 @@
+{
+  "name": "assignment-tracker-frontend",
+  "version": "1.0.0",
+  "description": "Assignment Tracker frontend",
+  "main": ".eleventy.js",
+  "scripts": {
+  	"serve": "ELEVENTY_ENV=dev npx eleventy --serve",
+    "start": "npm run serve",
+    "build": "ELEVENTY_ENV=dev npx eleventy",
+    "build:prod": "ELEVENTY_ENV=prod npx eleventy",
+    "debug": "DEBUG=* npx eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ameybhavsar24/assignment-tracker-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ameybhavsar24/assignment-tracker-frontend/issues"
+  },
+  "homepage": "https://github.com/ameybhavsar24/assignment-tracker-frontend#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  }
+}
