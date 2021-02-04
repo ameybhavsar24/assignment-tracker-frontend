@@ -4,7 +4,7 @@
   "description": "Assignment Tracker frontend",
   "main": ".eleventy.js",
   "scripts": {
-  	"serve": "ELEVENTY_ENV=dev eleventy --serve",
+    "serve": "ELEVENTY_ENV=dev eleventy --serve",
     "start": "npm run serve",
     "watch": "eleventy --watch",
     "build": "ELEVENTY_ENV=dev eleventy",
