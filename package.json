@@ -4,12 +4,12 @@
   "description": "Assignment Tracker frontend",
   "main": ".eleventy.js",
   "scripts": {
-    "serve": "ELEVENTY_ENV=dev eleventy --serve",
+    "serve": "cross-env ELEVENTY_ENV=dev eleventy --serve",
     "start": "npm run serve",
     "watch": "eleventy --watch",
-    "build": "ELEVENTY_ENV=dev eleventy",
-    "build:prod": "ELEVENTY_ENV=prod eleventy",
-    "debug": "DEBUG=* eleventy",
+    "build": "cross-env ELEVENTY_ENV=dev eleventy",
+    "build:prod": "cross-env ELEVENTY_ENV=prod eleventy",
+    "debug": "cross-env DEBUG=* eleventy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/ameybhavsar24/assignment-tracker-frontend#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1"
+    "@11ty/eleventy": "^0.11.1",
+    "cross-env": "^7.0.3"
   }
 }
