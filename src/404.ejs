@@ -1,0 +1,45 @@
+---
+title: Oops! Not Found
+permalink: 404.html
+---
+<% include _includes/partials/htmlhead.ejs %>
+<style>
+	* {
+		user-select: none;
+	}
+	html, body {
+		background: #111;
+		color: #FFF;
+		min-height: 100vh;
+		text-align: center;
+	}
+	a {
+		color: lightblue;
+	}
+	.center {
+		min-height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
+	}
+	h1 {
+		font-size: min(10rem, 10vh);
+		animation: color-rotate 16s infinite;
+		font-weight: 100;
+	}
+	@keyframes color-rotate {
+		0% { color: red; }
+		25% { color: yellow; }
+		50% { color: green; }
+		75% { color: blue; }
+		100% { color: red; }
+	}
+</style>
+<div class="center">
+	
+	<h1>404</h1>
+	<h2><%= title %></h2>
+	<p>Go back to <a href='/'>home.</a></p>
+	<% include _includes/partials/htmlfoot.ejs %>
+</div>
