@@ -18,7 +18,7 @@ module.exports = config =>  {
 	config.addWatchTarget('./src/scss/');
 	config.addWatchTarget('./src/js/');
 
-	
+	config.addPassthroughCopy('./src/assets');
 	// 11ty defaults
 	return {
 		dir: {
