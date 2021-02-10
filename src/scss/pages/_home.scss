@@ -1,1 +1,41 @@
 // Home page styling goes here
+.carousel_heading {
+  color: #007bff;
+  text-align: center;
+}
+
+.carousel {
+  display: flex;
+  color: rgb(122, 122, 122);
+}
+
+.ouraim, .ourservices {
+  flex: 50%;
+  margin: 30px;
+  padding: 20px;
+  text-align: justify;
+  box-shadow: 0 0 30px rgb(190, 190, 190);
+  transition: box-shadow 400ms;
+}
+
+.ouraim:hover, .ourservices:hover {
+  box-shadow: 0 0 5px rgb(190, 190, 190);
+}
+
+.carousel h4 {
+  color: #007bff;
+}
+
+@media only screen and (max-width:20cm)
+{
+.carousel {
+  flex-wrap: wrap;
+}
+
+.ouraim, .ourservices {
+  flex: 100%;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 0 0 15px rgb(190, 190, 190);
+}
+}
