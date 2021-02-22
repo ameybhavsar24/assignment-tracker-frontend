@@ -3,3 +3,4 @@
 build
 node_modules
 desktop.ini
+.lite_project.lua
